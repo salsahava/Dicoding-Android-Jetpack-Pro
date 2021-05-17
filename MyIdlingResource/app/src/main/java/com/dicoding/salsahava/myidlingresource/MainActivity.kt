@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
     private fun delay2() {
         // For testing purposes, should be deleted if the app will be turned into APK
         EspressoIdlingResource.increment()
-        
+
         Handler(Looper.getMainLooper()).postDelayed({
             activityMainBinding.textView.text = getString(R.string.delay2)
 
